@@ -1,0 +1,12 @@
+spring:
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prayz
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

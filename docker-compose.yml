@@ -1,7 +1,7 @@
 services:
   # Serviço do PostgreSQL
   postgres:
-    image: postgres:15
+    image: postgres:14
     container_name: prayz_db
     restart: always
     environment:

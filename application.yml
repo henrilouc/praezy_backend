@@ -4,9 +4,15 @@ spring:
     locations: classpath:db/migration
   datasource:
     url: jdbc:postgresql://localhost:5432/prayz
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    username: ${DB_USER:prayz}
+    password: ${DB_PASSWORD:prayz}
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  security:
+    user:
+      name: user
+      password: ""

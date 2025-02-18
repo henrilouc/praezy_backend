@@ -1,4 +1,4 @@
-package com.example.prayz
+package com.prayz
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class PrayZApplication
 
 fun main(args: Array<String>) {
-	runApplication<PrayZApplication>(*args)
+    runApplication<PrayZApplication>(*args)
 }
